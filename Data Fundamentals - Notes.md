@@ -6,7 +6,7 @@
 - Appreciate the significance of standards, best practices and regulations
 
 ### Key Concepts
-1.Data Driven Culture
+**1. Data Driven Culture**
    - Clean, usable data
    - Governance and quality
    - Data stewardship and literacy
@@ -70,4 +70,82 @@
 **11. Decision Trees**
 Decision trees are machine learning algorithms that represent decision-making processes in a flowchart-like structure, facilitating clear and interpretable understanding of outcomes.
 
+## 1.2 Introduction to Data Quality
 
+### Objectives
+- Define data quality and its significance
+- Demonstrate an understanding of the importance of data
+standards in data engineering
+- Apply data quality management strategies proficiently to
+improve the accuracy and reliability of data
+- Analyse sustainable data practices and governance
+principles to advocate for long-term data quality and integrity
+
+### Key Concepts
+
+**1. FAIR Data Principles:**
+- FINDABILITY
+- ACCESSIBILITY
+- INTEROPERABILITY
+- REUSABILITY
+
+ **2. Data Quality Concepts:**
+- Accuracy
+- Integrity
+- Consistency
+- Timeliness
+- Reliability
+
+**3. The Dublin Core Metadata Initiative**
+
+**4. Common issues with data formats:**
+- XML
+- CSV
+- JSON
+
+**5. Common data quality issues:**
+- missing records
+- missing attributes
+- unexpected formats
+- incorrect values
+- duplication
+- outdated values
+- illogical order of events
+
+**6. Strategies for ensuring data quality:**
+- Data Lineage
+- Unique Identifiers (UID's & UUID's)
+
+**7. Data Wrangling & cleansing**
+
+**8. Data Stewardship**
+
+**9. Sustainability**
+- Data compression
+- Green data transfer
+- Avoiding duplication
+- Lean data management
+- Data Lifecycle Management
+
+**10. Semantic validity models include:**
+• RDF (Resource Description Framework)
+• SPARQL
+• OWL (Web Ontology Language)
+
+**11. Implementing Data Quality Framework:**
+- Define
+- Measure
+- Analyse
+- Improve
+- Control
+
+**12. The role of data management:**
+- ensures accountability & responsibility
+- facilitates collaboration & communication
+- provides framework for decision making
+- establishing policies, procedures & standards
+  
+
+
+
+  
