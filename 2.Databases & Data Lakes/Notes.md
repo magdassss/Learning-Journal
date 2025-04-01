@@ -210,6 +210,259 @@ an optional WHERE clause to filter records.
 - updating views
 - non-updatable views
 
+## 2.4. Database Administration & Optimisation
+
+### Objectives
+
+Data profiling
+
+Database archiving
+
+Query profiling
+
+Query optimisation
+
+Recovery
+
+Indexing
+
+Security
+
+Outages
+
+**1. Data Profiling** - is the application of data analysis techniques to existing data for
+the purpose of determining the actual content, structure, and quality of the data.
+
+**Role of Metadata and Data Rules**
+- Must define what constitutes correct
+- Traditional metadata is only part of definition
+- Traditional metadata is often inaccurate and/or incomplete
+- Data rules exist whether known or not
+- Data rules exist whether enforced or not
+- Profiling can validate metadata and known data rules
+- Can be used to correct or enhance metadata and data rules
+- Can be used to discover additional data rules
+- Can test adherence to data rules
+
+  **Where is Data Profiling Used?**
+  - Database Quality Improvement Program
+  - Support Consolidation of Databases after mergers and acquisitions
+  - Support data integration functions for data warehousing/ business
+intelligence data stores
+
+**2. Database Quality Program**
+- Data Quality Discovery
+- Data Quality Correction
+- Data Quality Prevention
+
+**3. Data Profiling Functions**
+- Column Examination
+- Row Examination
+- Multi-table Examination
+- Test User provided data rules
+
+**4. Data Profiling Solution Architectures**
+
+**5. Data Profiling Functions**
+- Home Grown
+- Vendor Tools
+
+**6. Database archiving** - The process of removing selected data items from operational databases that are not expected
+to be referenced again and storing them in an archive database where they can be retrieved if needed.
+
+**7. Data Retention** - The requirement to keep data for a business object for a specified period of time.
+The object cannot be destroyed until after the time for all such requirements applicable to it has past.
+
+**8. Database archive staff**:
+- Archive specialist
+- Database archive adiministrator
+- Supporting roles:
+  
+**Storage Administrators*
+
+**Database Administrators*
+
+**Data Stewards*
+
+**Security Administrators*
+
+**Compliance staff*
+
+**IT management*
+
+**Business Unit Management*
+
+**Legal*
+
+**Records Management*
+
+
+**9. Archive Designer Component**
+- Database Archiving solutions generally provide for lower cost software, can
+use lower cost storage more efficiently, and run on smaller machines.
+- Each business case is different
+- Many factors can be used in building business case
+- Seen an application justified on storage costs alone
+- Seen an application justified on disaster recovery time alone
+- Seen an application justified on better data security alone
+- Each organisation will have many potential applications
+- Having a database archiving practice can create synergies across many
+ applications thus adding more value
+
+**10. Query Optimisation**
+- Collecting Execution Data:
+**Use profiling tools to gather data on query execution plans and resource usage.*
+- Analyzing Execution Plans:
+**Review the query execution plan to understand how the database processes the query.*
+**Look for signs of inefficiency, such as full table scans or missing indexes.*
+- Monitoring Resource Usage:
+**Track CPU, memory, and I/O usage during query execution.*
+**Identify queries that consume excessive resources.*
+- Identifying Bottlenecks
+**Pinpoint stages in the query execution where delays occur.*
+**Focus on optimizing these critical areas.*
+
+**10.1 Indexing**
+
+**10.2 Optimisation: Rewriting**
+
+**10.3 Denormalisation**
+
+**10.4 Partitioning**
+
+**10.5 Caching**
+
+**10.6 Configuration tuning**
+
+
+**11. Database recovery models**
+- A recovery model is a database property that controls how transactions are logged, whether the transaction log requires (and allows) backing up, and what kinds of restore operations are available.
+- Typically, a database uses the full recovery model or simple recovery model.
+- A database can be switched to another recovery model at any time.
+- Simple = only the latest backup can be restored.
+- Full = can restore to different points before failure.
+
+**12. PITR** - point in time recovery - full restore using automated snapshots allows restoring to any specific time
+
+**13. Amazon RDS Snapshots** 
+- automated
+- manual
+
+**14. Security**
+- Don’t have all developers login with the same UID
+- Don’t use the DBA UIDs for developers
+- Do keep UIDs confidential
+- Don’t let an application use a developer/user/dba login
+
+**15. SQL Injection**
+
+**16. Outages**
+
+## 2.5. NoSql
+
+### Objectives
+
+ - Explain differences between SQL and NoSQL
+ - Evaluate examples of NoSQL technologies and what business requirements they answer
+ - Set the scene for data pipelines (future modules)
+ - Practice writing NoSQL queries with MongoDB
+
+**1. SQL:**
+- Relational databases
+- Used to create structured data schemas
+- Relationships between the different entries are created with foreign keys
+- Spreadsheet methaphor for SQL:
+- Spreadsheet is a database
+- Each sheet represents a table
+
+**2. No SQL** - not only SQL
+- non relational
+- key value pairs
+- cluster friendly
+- open sources
+- schemaless
+
+**3. Document-based databases**
+
+When should we use them:
+
+- The schema is not clear in advance or changes quite often
+- You want to dump data into your database very fast
+- You often want to search for exactly one record
+- You do not want to do complicated queries and merges
+
+**4. Mongo DB**
+- No Schemas
+- No transactions
+- No joins
+- Max document size of 16MB
+- Larger documents handled with GridFS
+
+**5. Major types of NoSql databases:**
+- Key-value
+- Document based
+- Column based
+- Graph based
+
+**6. Redis**
+- You deal with applications that require very fast read and write
+- Data structure is quite simple and can be stored as key-value pair
+- Integrity is important but not critical
+- As a data engineer, you might want to use it when building a
+dashboard or an API
+
+**7. Potential drawbacks of noSQL solutions**
+- Merges between different tables are difficult to
+perform
+- Therefore, data is not stored in a normalised way
+(also called denormalisation)
+- This requires quite some space as e.g. attribute
+names and values are replicated
+- Having no schema makes it sometimes hard to
+understand the data
+- It is generally less efficient for repetitive tasks like
+reporting
+
+**8. Column-based NoSQL databases**
+- Similar to RDBMs because they store data in tables
+(rows and columns)
+- but differ from relational database because each
+row is not required to have the same columns
+- particularly suited for rapid collection of data and
+at high volumes
+- Eg Cassandra and HBase.
+ 
+**When to use them:*
+  
+- Optimised for data warehousing: Ideal for managing and querying large volumes of data efficiently, particularly in analytics and reporting.
+- Real-time big data analytics: Facilitates rapid analysis and reporting, crucial for applications like financial trading and web analytics.
+- Scalability and flexibility: Excellently suited for scalable, cloud-based applications with variable workloads due to efficient data distribution capabilities.
+- Efficient sparse data management: Highly effective in handling datasets with many empty or null fields, common in telecommunications and IoT
+
+**9. Graph Databases**
+- Graph database store nodes and relationships
+- Easy and fast graph traversal
+- Very promising approach as a lot of data is actually relationships between entities
+
+**10. What are data pipelines?**
+- Pipelines play a pivotal role in automating and streamlining data movement and transformation processes
+- A high-quality pipeline is resilient, idempotent, and scalable, qualities that are critical for reliable data operations.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
   
