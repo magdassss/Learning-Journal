@@ -185,3 +185,99 @@ C) Change/ access configuration files
 - su, switch user, su – (complete user environment)
 - passwd, change password
 
+
+## 3.2 Version Control
+
+### Objectives
+- Understand the principles of DevOps and its application in data
+engineering to enhance collaboration, automation, and monitoring
+- Gain practical knowledge of version control, Continuous Integration
+and Continuous Deployment (CI/CD) processes to ensure efficient
+and reliable delivery of data products
+- Conduct effective code reviews using GitHub to maintain code
+quality and facilitate team collaboration
+
+- An introduction to version control
+- Git and its applications
+- Practical demonstration - Working with repositories
+- Git branching, changes and merges
+
+**1. Introduction to version control**
+- Version control keeps record of your changes in codes
+- Allows you to revert any changes and go back to a previous state
+- It's a time machine
+
+**2. Different version control types**
+- local VCS
+- central SVN
+- distributed - Git
+
+**3. Introducing Git**
+- Free and open-source version control system
+- Created by Linus Torvalds in 2005
+- Widely used, fast, and offline-capable
+- Efficient storage of file changes
+- Good at merging code versions
+- Enables easy code exchange and backup
+
+- Git solves data engineering problems related to collaboration and reproducibility
+- Git has simple – yet powerful – concepts
+- Multiple services available for it
+
+**4. Git vs. OneDrive/Dropbox**
+- Git works similarly, but with more control/ at each step
+
+**5. Point-and-click interfaces**
+Some coding environments come with Git integration, e.g.
+- RStudio
+- PyCharm
+- VSCode
+
+**6. GitLab / GitHub** 
+- These are different websites but both tools are built on top of Git
+- You can think of them as online storage of Git repositories
+- Repository management that acts as your single source of truth in a distributed version control workflow
+- These also includes code review tools with tons of collaboration and flow management features
+- Both also have an issue tracker with issue boards and a project wiki.
+
+**7. Git workflow**
+- create branch
+- start with clean working directory
+- make some changes
+- create a snapshot - create commit
+- make a commit
+- pull and push to repository
+
+**8. The three states of Git**
+- modified: files are changed but have not been committed it to your database yet
+- staged: modified file in its current version is marked to go into your next commit
+- committed: data is safely stored in your local database
+
+**9. Working with repositories**
+- NEVER place a git repository in e.g. OneDrive
+- NEVER place a git repository inside another git repository
+- Don’t get lazy with commit messages!
+- For code that other people will use, use Semantic - Versioning for version numbers - Major.Minor.Patch
+
+- Use branching in GitHub for group projects
+- Branches are deviations in the commit tree
+- Branches are useful for feature management
+- Be aware of merge conflicts
+
+**10. Branching**
+
+What is a branch?
+- git branch - lists all the branches in your repo and show your current branch
+- git checkout –b <branchname> - creates a new branch and switch to it
+- git checkout <branchname> - switch from one branch to another
+- git merge <branchname1> <branchname2> - adds a file to the staging area
+
+- Concept to make changes, without affecting the master-version
+- Multiple branches can co-exist in parallel
+- Used to implement new features
+- Can be merged into each other
+
+**11. Git functionalities**
+1. Branches and Merging
+2. HEAD
+3. Reversing changes
