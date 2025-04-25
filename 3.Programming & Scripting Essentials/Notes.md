@@ -283,7 +283,7 @@ What is a branch?
 3. Reversing changes
    
 
-## 4.1 Linux for Data Engineers
+## 3.3 Python for Data Engineers
 
 ### Objectives
 
@@ -349,4 +349,86 @@ x_int = int(x)
 
 **10. Booleans**
 
-**11. Conditional statetements & Loops**
+**11. Conditional Statetements & Loops**
+
+
+## 3.4 Object Oriented Programming
+
+### Objectives
+- Describe the key concepts of Object-Oriented Programming
+(OOP) in Python
+- Demonstrate knowledge of how to create classes, objects,
+and methods in Python
+- Describe advanced OOP concepts and their use-cases
+
+**1. What is Object-Oriented Programming?**
+
+OOP - a method of structuring a program by bundling related properties and behaviours into individual objects.
+- Simplifies code
+- Models real world
+- Encapsulation protects data
+- Makes complex systems managable
+- Modular
+
+- reusability
+- organisation
+- enhanced data security
+
+**2. OOP in python**
+Object-oriented Programming is an approach for modelling concrete, real-world things, like cars, as
+well as relations between things, like companies and employees, students and teachers, and so on.
+
+**3. Defining a Class in OOP**
+- you can think of a class as a blueprint for creating objects
+- classes provide a way to create objects
+- fundamental concept of OOP and allow for the creation of complex applications by modelling real-world objects or concepts
+
+**4.Objects in OOP**
+- represents a specific instance of a class
+- object in OOP would be like a real, individual car instance that you see on the road, with unique property
+values (attributes), for example a specific VRM (car reg.)
+
+**5. Methods**
+A "method" is a function that is associated with an object of a particular class. Methods are a way to define the
+behaviours of objects.
+
+**6. Properties and Methods**
+- A property is some data held by an object. Some people call properties fields or attributes.
+- Methods are some code that the object can execute
+- Methods can manipulate or use the field data of the object
+- Properties are special variables that belong to each individual object instance
+- Methods are like functions that are relevant to that class of object
+
+*Static Methods*
+- Just as a class can have static properties, like min and max salaries, so it can have static methods
+  
+*“Static” Class Members*
+- properties that are shared among all instances of a class
+
+**7. Advanced OOP Principles in Python**
+
+ Why to use Dataclass Decorators:
+- Simplifies the creation of classes with many attributes
+- Automatically generates common special methods, reducing boilerplate code
+- Improves code readability and maintainability
+ 
+*Polymorphism* allows objects of different classes to be treated as objects of a common base class.
+
+Why use polymorphism:
+- Simplifies code by providing a unified interface to multiple classes
+- Enhances flexibility, allowing different objects to be used interchangeably
+- Supports dynamic method dispatch, allowing the correct method to be called at runtime based on the object's actual type
+
+*Inheritance* allows a class (subclass) to inherit attributes and methods from another class (superclass).
+
+Why use inheritance:
+- Avoids code duplication by reusing common attributes and methods
+- Organises classes in a hierarchical structure
+- Enables polymorphism, allowing objects of different subclasses to be treated uniformly
+
+*Encapsulation* is the principle of bundling data (attributes) and methods (behaviours) that operate on the data within a class.
+
+Why use encapsulation:
+- Protects data from unauthorised access and modifications
+- Allows validation and control over data access, ensuring data consistency
+- Enhances code maintainability by hiding internal implementation details
