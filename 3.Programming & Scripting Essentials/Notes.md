@@ -281,3 +281,72 @@ What is a branch?
 1. Branches and Merging
 2. HEAD
 3. Reversing changes
+   
+
+## 4.1 Linux for Data Engineers
+
+### Objectives
+
+- Identify the main approaches to software development
+- Apply variables and common operators in Python
+- Explain software testing and test-driven development
+
+**1. The SLDC model**
+- Planning
+- Analysis
+- Design
+- Development
+- Testing
+- Deployment
+- Maintenenace
+
+**2. Agile SDLCs**
+- Speed up or bypass one or more life cycle phases
+- Usually less formal and reduced scope
+- Used for time-critical applications
+- Used in organisations that employ disciplined methods
+
+Agile development frequently uses iterative development or incremental delivery (or both).
+
+**3. XP - eXtreme Programming**
+- For small-to-medium-sized teams developing software with vague or rapidly changing requirements
+- Coding is the key activity throughout a software project
+- Communication among teammates is done with code
+- Life cycle and behavior of complex objects defined in test cases – again in code
+
+*Best Practises*
+- Code reviews: Review code all the time
+- Testing: Everybody tests all the time
+- Simplicity: Maintain simplest design for current functionality
+- Design: Everybody designs daily
+- Architecture: Everybody refines the architecture
+- Integration Testing: Build and integrate tests several times a day
+- Short Iterations: Keep iterations extremely short
+
+**4. Syntax vs semantics**
+Semantics - meaning of your program
+Syntax - specifying your algorithm using a programming language
+
+**5. Python and types**
+- Dynamic typing: Python determines the data types of variable bindings in a program
+automatically
+- Strong typing: But Python’s not casual about types, it enforces the types of objects
+
+**6. Lists, Dictionaries, tuples**
+- list []- unordered collection of elements
+- dictionary {} - unordered collection of data (key value pairs)
+- tuples () - immutable - cannot be changed unless we re-assign value points
+
+**7. Type conversions**
+x = 10
+x_int = int(x)
+        float(x)
+        complex(x)
+
+**8. Strings**
+
+**9. Indexing**
+
+**10. Booleans**
+
+**11. Conditional statetements & Loops**
