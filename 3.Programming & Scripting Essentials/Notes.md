@@ -383,7 +383,7 @@ well as relations between things, like companies and employees, students and tea
 - classes provide a way to create objects
 - fundamental concept of OOP and allow for the creation of complex applications by modelling real-world objects or concepts
 
-**4.Objects in OOP**
+**4. Objects in OOP**
 - represents a specific instance of a class
 - object in OOP would be like a real, individual car instance that you see on the road, with unique property
 values (attributes), for example a specific VRM (car reg.)
@@ -432,3 +432,215 @@ Why use encapsulation:
 - Protects data from unauthorised access and modifications
 - Allows validation and control over data access, ensuring data consistency
 - Enhances code maintainability by hiding internal implementation details
+
+
+ ## 3.5 Data Manipulation
+
+ ### Objectives
+ 
+- Explain data manipulation using data engineering tools
+- Wrangle and clean more complex datasets using Pandas
+- Perform advanced analysis like pivots, aggregates on multiindexed data
+- Apply regular expressions to data
+
+**1. Explaining Data Manipulation**
+Data manipulation is the method used to modify, structure, format, or sort data so that it becomes useful and more manageable
+
+**2. Unpacking Pandas**
+
+Pandas is an open-source Python library that provides high-performance, easy-to-use data structures and data analysis tools. 
+Pandas enables users to:
+- Clean
+- Transform
+- And explore datasets
+
+**3. What is DataFrame?**
+
+A DataFrame is a two-dimensional tabular data structure, similar to a spreadsheet, where data is organised in rows and columns.
+
+**4. Introduction to Series**
+
+- A Series is a one-dimensional labelled array in Pandas
+- It can be thought of as a column in a spreadsheet or a simple array
+- Series supports various data types and allows for easy indexing and data alignment
+- Each element in a Series has a label (an index) that helps in data alignment and retrieval
+- Series are used to represent one-dimensional data sets and are an essential component of DataFrames
+
+**5. Loading and Exploring data in Pandas**
+
+- Pandas provides convenient functions to read data from various file formats and explore the structure of the data.
+- Pandas provides several functions to read data from various file formats, making it convenient to load and analyse data from different sources, including:
+a) Reading Data from CSV Files
+b) Reading Data from Excel Files
+c) Reading Data from JSON Files
+d) Reading Data from SQL Files
+
+**6. Understanding the Structure of Data**
+
+- The head() method is used to display the first few rows of the DataFrame, providing a quick
+overview of the data's structure.
+- Similarly, the tail() method displays the last few rows of the DataFrame.
+- The describe() method generates statistical summaries of the DataFrame. This method provides measures like mean,
+median, standard deviation, and quartiles for numerical columns.
+- Pandas provides powerful tools to filter data based on specific conditions using Boolean indexing. Boolean indexing allows filtering rows that meet certain criteria. Boolean indexing in pandas is a way to filter data in a DataFrame using True/False values.
+- Pandas allows us to arrange data in a particular order using the sort_values() method. Sorting can be done based on one or more
+columns in ascending or descending order.
+- Pandas supports various data transformation operations, such as adding or removing columns, renaming columns, and converting data types.
+
+**7. Data Wrangling**
+
+Data wrangling is a crucial aspect of data analysis that involves cleaning, transforming, and preparing data to make it suitable for analysis.
+Examples of data wrangling include:
+- Data cleaning
+- Data filtering and sub-setting
+- Data transformation
+
+**8. Data Cleaning and Handling Missing Values**
+
+- Pandas makes data cleaning simple with functions like dropna() to remove missing values and fillna() to impute values.
+Also useful:
+- astype()
+- drop_duplicates() - This function identifies duplicate rows based on all column values and keeps only the first
+occurrence of each duplicate row
+- Filtering data: Pandas provides powerful tools to filter data based on specific conditions.
+- Sorting data: Arrange data in a particular order using sort_values() method.
+- Pandas allows users to group data based on specific columns using the groupby() method.
+- Grouping is useful for segmenting data and performing aggregate operations on each group.
+- Once data is grouped, aggregate functions like sum(), mean(), count(), etc., can be applied to each group to compute
+meaningful statistics.
+
+**9. Pivot Tables**
+- Pandas provides the pivot_table() function, allowing users to create a spreadsheet-style pivot table. This summarises data from a DataFrame, enabling better data analysis and understanding
+
+**10. Merging, Joining, and Concatenating**
+
+The merging, joining and concatenating functions in Pandas allow you to combine or bring together DataFrames in various ways.
+
+**11. Time Series Definition**
+
+Time series data is a sequence of data points ordered by time. The data is indexed by time (for example - days, months, years).
+
+**12 Data/Time Data Types**
+
+- Pandas has datetime data types to represent dates, times, timestamps
+- The pd.to_datetime() converts other data types to datetime
+- pd.date_range() can generate a DatetimeIndex for a date range
+
+**13. Regular Expressions (Regex)**
+
+- RegEX is a specific search pattern that can be used to easily match, locate and manage text
+- To validate an input from the user (e.g. email address)
+
+The syntax of RegEx:
+
+Symbol Meaning
+^ Start of input
+$ End of input
+[A-Za-z0-9] Range of characters
+\s Whitespace
+\w Word characters
+\. . (dot) character
+. Any single character
+\D A single NON-digit
+\S NON-whitespace
+\W NON-word characters
++ One or more
+{5} Exactly five
+{5,} At least five
+? One or none
+{2,5} Two to five
+{,5} Up to five
+
+ ## 3.6 Algorithmic Thinking
+ 
+ ### Objectives
+ 
+- Employ software development tools and techniques for designing, deploying and maintaining secure data products and pipelines, including debugging, version control and testing
+- Construct algorithms that correctly and efficiently handle data at scale whilst mitigating risks
+- Demonstrate the knowledge of the steps needed to prepare the code for production
+ 
+**1. Intro to Programming**
+Programming requires two skills:
+1. Algorithmic thinking
+2. Knowledge of programming language syntax
+
+To be able to turn your pseudocode into actual code, you need to understand the syntax of your chosen programming language.
+Programming relies heavily on abstraction.
+
+Abstraction:
+
+- A general idea or term
+- An impractical idea; visionary and unrealistic
+- General characteristics apart from concrete realities, specific objects or actual instances
+- Absent-mindedness; inattention-
+- A work of art
+
+Abstraction in computing:
+
+- Refers to the logical grouping of concepts or objects
+- Define/implement the general idea
+- Isolate the details
+- Helps readability and understanding of our algorithms
+
+Algorithms in computing:
+
+- A set of logical steps to accomplish a task
+- One way to solve a problem
+- A “recipe of action”
+- A way of describing behavior
+
+Algorithms contain:
+- Data
+- Instructions
+
+Computer science:
+
+- It is a study of algorithms rather than study of computers!
+- Often uses pseudo-code to focus on algorithmic thinking
+- Not using a computer to compile and run your program forces you to mentally execute your program
+
+**2. Properties of good algorithms**
+
+- Natural language (English)
+- Pictures
+- Pseudo-code or a specific programming language
+
+**3. The components of algorithms**
+
+1. Data structures – to hold data
+2. Instructions – to change data values
+3. Conditional expressions – to make decisions
+4. Control structures – to act on decisions
+5. Modules – to make the algorithm manageable by abstraction; i.e – grouping related components
+
+**4. Elements of a programming language**
+
+- Built-in
+- User-defined
+
+**5. Computational performance**
+
+Algorithm Analysis estimates problem cost as a function of growth rate. It is the input that we want to grow, and then observe how
+the algorithm “handles” this scaling.
+
+## 3.7 Spark for Data Engineers
+
+### Objectives
+
+- Evaluate the use of Spark clusters for data processing
+- List the essential features of data pipelines
+- Explain how pipelines can be constructed used SparkSQL
+and Spark streaming
+- Evaluate the most common deployment strategies for Spark
+applications
+
+
+
+
+
+
+
+
+
+
+
