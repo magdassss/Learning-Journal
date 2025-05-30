@@ -560,6 +560,7 @@ $ End of input
 - Demonstrate the knowledge of the steps needed to prepare the code for production
  
 **1. Intro to Programming**
+
 Programming requires two skills:
 1. Algorithmic thinking
 2. Knowledge of programming language syntax
@@ -623,19 +624,190 @@ Computer science:
 Algorithm Analysis estimates problem cost as a function of growth rate. It is the input that we want to grow, and then observe how
 the algorithm “handles” this scaling.
 
-## 3.7 Spark for Data Engineers
+## 3.7 Parallel Programming and Spark
+
+### Objectives
+
+- Identify and explain key concepts of concurrency, parallelism and distributed computing
+- Explain key concepts of parallelism and apply within the concept in python programming
+- Report on benefits of parallelism
+- Analyse perfromance and deployment considerations of parallel programming
+
+ **1. An intorduction to parallelism**
+ - parallelism in programming
+ - efficiency
+ - design considerations
+ 
+ **2. Multiprocessing and Multithreading**
+ - multiprocessing - separate CPU memory, perfect for CPU-bond tasks - increase computer speed - achieves parallelism
+ - multithreading - sharing CPU and memory - stacking threads - executes multiple threats concurrently - achieves  concurrency
+
+ **3. Concurrency: fork-join model**
+ 
+ **4. Applying processes/ threads to big data**
+ 
+ **5. Distributed Computing**
+ 
+ - uses multiple processors, possibly at different locations
+ - enables large scale computations than one machine
+ - the model boosts efficcieny and cuts processing time
+ - principle vital to modern computing
+
+
+## 3.8 Spark for Data Engineers
 
 ### Objectives
 
 - Evaluate the use of Spark clusters for data processing
-- List the essential features of data pipelines
-- Explain how pipelines can be constructed used SparkSQL
-and Spark streaming
-- Evaluate the most common deployment strategies for Spark
-applications
+- Essential features of data pipelines
+- Explain how pipleines are constructed using SparkSQL and Spark streaming
+- Evaluate the most common deployment startegies for Spark applications
+- Report on benefits of Spark parallelism
+- Evaluate platforms similar to Spark
 
+**1. Apache Spark**
 
+- Fast and general purpose cluster computing system for large scale data processing
+- High level API's in Jva, Scala, Pythonn and R
 
+Features of Spark:
+
+- reusability
+- speed
+- advanced analytics
+- in memory computing
+- real-time stream processing
+- lazy evaluation
+- dynamic in nature
+- fault tolerance
+
+**2. RDD - resilient distributed datasets**
+
+**3. Spark**
+  
+- runs as application oon existing Spark cluster
+- or can run locally
+- available in python and scala
+
+## 3.9 Practical skills for data engineers and module consolidation
+
+### Objectives
+
+- Employ software development tools and techniques for designing, deploying and maintaining secure data products and pipelines
+- Construct algorithms that correctly and efficiently handle data at scale whilst mitigating risks
+- Demonstrate knowledge of the steps needed to prepare the code for production
+  
+**1. DevOps pipelines**
+
+The benefits:
+
+- Reduced risk
+- Shorter review time
+- Better code quality
+- Faster bug fixes
+- Measurable progress
+- Faster feedback loops
+- Increased collaboration
+
+**2. Continuos Integration**
+
+- Merging all programmers' code frequently
+- Automated process
+- Checks all code compiles
+- Runs tests and quality checks
+- Reports on failures
+
+Workflow
+
+- Run tests locally
+- Compile the mainline
+- Run tests on mainline
+- Report on tests
+
+*Best Practise*
+- Maintain a code repository
+- Automate the build
+- Self-testing
+- Commit at least daily
+- Build every commit
+- Every bug has a test
+- Builds should be fast
+- Life-like test environments
+- Easy to get deliverables
+- Transparent build results
+- Automate deployment
+
+Benefits:
+- Integration bugs are found early
+- Frequent commits mean easier to
+- locate issues
+- ‘Current’ build is always testable
+- Rigour around testing
+- Early access to metrics eg static analysis
+- Early feedback on changes
+
+**3. Continuos Delivery**
+
+CD means always having a potentially releasable product.
+
+This means:
+• Developing in short cycles
+• Ensuring quality of release candidates
+• Always having built and tested software
+
+Benefits:
+- Faster time to market
+- Build the right product
+- Improved efficiency and productivity
+- Reduced release risk
+- Improved quality
+- Improved customer satisfaction
+
+**4. Continous Deployment**
+
+- Continuous Deployment is essentially automated continuous delivery
+- Continuous delivery relies on a human approval system before a release can take place
+- Continuous deployment does not
+
+Benefits:
+- Automated release process
+- Bugs created recently are easier to fix
+- Faster time to market
+
+**5. Containersation**
+Packaging software so it is totally self-contained. This means it must contain:
+• The actual code
+• Libraries
+• Runtime environment
+• OS kernel
+
+Containers are designed to be:
+• OS agnostic
+• Write once, run anywhere (or at least more so)
+• Lightweight
+• Isolated
+
+**5. Infrastructure as Code**
+
+Treating infrastructure in the same way we would code.
+• Can be source controlled
+• Can be configured at will
+• Can be automated
+
+Benefits:
+- Cost
+- Speed
+- Risk
+
+**6. Docker**
+It simplifies…
+• Environment Setup: Quick and consistent
+• Rapid Deployment: Get up and running with a few keystrokes
+• Code Distribution: Access code, data, and libraries for analysis
+• Collaboration: Work together seamlessly
+• Simplicity: Easier than dealing with virtual machines (VMs)
+
+**7. Kubernetes**
 
 
 
